@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(196, 185, 185);
+}
+
+.header-styling {
+    color: #752a0d;
+}
+
+.about {
+    text-transform: uppercase;
+}
+
+.diary {
+    font-family: arial;
+    color: #032a4b
+}
+
+a {
+    color: orange;
+}
