@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Andrzej Kocunkiewicz - JS Developer</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <a href="o-mnie.html">O mnie</a>
-            <a href="nauka.html">Nauka</a>
-        </nav>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <a class="navigation__link" href="index.html">Strona główna</a>
+        <a class="navigation__link" href="o-mnie.html">O mnie</a>
+        <a class="navigation__link" href="nauka.html">Nauka</a>
+      </nav>
     </header>
     <main>
-            <header>
-                <h1 class = "header-styling">Andrzej Kocon - dziennik najlepszego programisty JavaScript w Sokółce</h1>
-                <p>Uwaga będzie to tutaj moim pamiętnikiem. I zostanę tym programistą, zobaczycie. BOXXPLAY TO KUPA</p>
-                <img src="img/img-strona-glowna.jpg" alt="Uśmiechnięta wiewiórka">
-            </header>
-        
-        
+      <header class="header-styling">
+        <h1 class="header-styling__heading">
+          Andrzej Kocon - dziennik najlepszego programisty JavaScript w Sokółce
+        </h1>
+        <p class="header-styling__paragraph">
+          Uwaga będzie to tutaj moim pamiętnikiem. I zostanę tym programistą,
+          zobaczycie. BOXXPLAY TO KUPA
+        </p>
+        <img
+          class="header-styling__image"
+          src="img/img-strona-glowna.jpg"
+          alt="Uśmiechnięta wiewiórka"
+        />
+      </header>
+      <div class="js-inner"></div>
     </main>
-    <footer>
+    <footer class="footer">
+      <p class="footer__text">
         Strona domowa Andrzeja Kocunkiewicza - wszelkie koty pogłaskane
+      </p>
     </footer>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

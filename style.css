@@ -1,20 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    background-color: rgb(196, 185, 185);
+  background: rgb(196, 185, 185);
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
-.header-styling {
-    color: #742101;
+.header-styling__heading {
+  color: #742101;
 }
 
-.about {
-    text-transform: uppercase;
+.header-styling__paragraph {
+  margin: 20px 0;
 }
 
-.diary {
-    font-family: arial;
-    color: #032a4b
+.about-me__heading {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.about-me__paragraph {
+  font-family: arial;
+  margin-top: 15px;
 }
 
-a {
-    color: rgb(38, 63, 38);
+.diary__heading {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.week-summary__date {
+  font-family: arial;
+  color: #032a4b;
+  margin: 10px 0;
+}
+
+.week-summary__description {
+  font-family: arial;
+}
+.navigation {
+  background-color: rgb(26, 3, 3);
+  border-radius: 8px;
+  margin: 10px 0 20px 0;
+}
+
+.navigation__link {
+  margin: 0 15px;
+  color: whitesmoke;
+  display: inline-block;
+  line-height: 24px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.footer {
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: rgb(26, 3, 3);
+  color: whitesmoke;
+  line-height: 24px;
+}
+
+.js-inner {
+  font-size: 30px;
+  color: rgb(16, 35, 71);
 }
