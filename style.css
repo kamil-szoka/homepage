@@ -1,19 +1,35 @@
-* {
-  margin: 0;
-  padding: 0;
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
-  background: rgb(196, 185, 185);
+  background: rgb(138, 162, 233);
+  background: linear-gradient(
+    121deg,
+    rgba(138, 162, 233, 1) 18%,
+    rgba(148, 187, 233, 1) 42%
+  );
+}
+.main {
   max-width: 1024px;
   margin: 0 auto;
 }
 
-.header-styling__heading {
+.main__heading {
   color: #742101;
 }
 
-.header-styling__paragraph {
+.header__navigation {
+  display: flex;
+  justify-content: center;
+}
+.main__paragraph {
   margin: 20px 0;
 }
 
@@ -34,12 +50,19 @@ body {
   font-family: arial;
   color: #032a4b;
   margin: 10px 0;
+  padding: 0 10px 10px 10px;
+}
+
+.week-summary {
+  border: 1px solid gray;
+  margin: 10px 0;
 }
 
 .week-summary__description {
   font-family: arial;
+  padding: 0 10px 10px 10px;
 }
-.navigation {
+.header__navigation {
   background-color: rgb(26, 3, 3);
   border-radius: 8px;
   margin: 10px 0 20px 0;
