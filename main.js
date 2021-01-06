@@ -30,3 +30,11 @@ greeting("Andrzej", 758);
 
 // const result = greeting("Andrzej", 758, 3);
 // console.log(result);
+
+const burger = document.querySelector(".hamburger");
+
+const myClick = () => {
+  const nav = document.querySelector(".navigation--js");
+  nav.classList.toggle("navigation--open");
+};
+burger.addEventListener("click", myClick);
