@@ -36,5 +36,6 @@ const burger = document.querySelector(".hamburger");
 const myClick = () => {
   const nav = document.querySelector(".navigation--js");
   nav.classList.toggle("navigation--open");
+  console.log("działa");
 };
 burger.addEventListener("click", myClick);
