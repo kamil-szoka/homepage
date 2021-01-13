@@ -30,7 +30,7 @@ body {
   min-height: 50px;
   width: 100%;
   background-color: white;
-  position: fixed;
+
   top: 0;
   left: 0;
 }
@@ -86,7 +86,18 @@ body {
   font-family: arial;
   color: #032a4b;
   margin: 10px 0;
-  padding: 0 10px 10px 10px;
+  padding: 0 10px 10px 11px;
+}
+
+.week-summary__date::before,
+.week-summary__date::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: hotpink;
+  border-radius: 50%;
+  margin: 0 5px;
 }
 
 .week-summary {
@@ -141,7 +152,9 @@ body {
     display: block;
     line-height: 30px;
   }
-
+  .header {
+    position: fixed;
+  }
   .header__navigation {
     display: none;
   }
