@@ -1,85 +1,109 @@
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 body {
-  background: #8aa2e9;
-  background: linear-gradient(121deg, #8aa2e9 18%, #94bbe9 42%);
-  min-height: 200vh; }
-
+  background: rgb(138, 162, 233);
+  background: linear-gradient(
+    121deg,
+    rgba(138, 162, 233, 1) 18%,
+    rgba(148, 187, 233, 1) 42%
+  );
+  min-height: 200vh;
+}
 .main {
   max-width: 1024px;
-  margin: 50px auto; }
-  .main__heading {
-    color: #742101; }
-  .main__paragraph {
-    margin: 22px 0; }
-  .main__image {
-    width: 100%; }
+  margin: 50px auto;
+  &__heading {
+    color: #742101;
+  }
+  &__paragraph {
+    margin: 22px 0;
+  }
+  &__image {
+    width: 100%;
+  }
+}
 
 .header {
   min-height: 50px;
   width: 100%;
   background-color: white;
   top: 0;
-  left: 0; }
-  .header__navigation {
+  left: 0;
+  &__navigation {
     display: flex;
     justify-content: center;
     background-color: white;
     border-radius: 8px;
-    margin: 10px 0 20px 0; }
+    margin: 10px 0 20px 0;
+  }
+}
 
 .about-me {
   display: grid;
-  grid-template-areas: "header header" "article aside";
+  grid-template-areas:
+    "header header"
+    "article aside";
   column-gap: 30px;
-  grid-template-columns: 1fr 2fr; }
-  .about-me__heading {
+  grid-template-columns: 1fr 2fr;
+  &__heading {
     grid-area: header;
     grid-column-start: 1;
     grid-column-end: 3;
     background-color: palevioletred;
     text-transform: uppercase;
     margin-bottom: 15px;
-    padding-left: 10px; }
-  .about-me__paragraph {
+    padding-left: 10px;
+  }
+  &__paragraph {
     grid-area: article;
     font-family: arial;
     margin-top: 15px;
-    padding-left: 10px; }
-  .about-me__image {
+    padding-left: 10px;
+  }
+  &__image {
     grid-area: aside;
     padding-right: 30px;
-    width: 100%; }
+    width: 100%;
+  }
+}
 
 .diary__heading {
   text-transform: uppercase;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+}
 
 .week-summary {
   border: 1px solid gray;
-  margin: 10px 0; }
-  .week-summary__date {
+  margin: 10px 0;
+  &__date {
     font-family: arial;
     color: #032a4b;
     margin: 10px 0;
-    padding: 0 10px 10px 11px; }
-  .week-summary__description {
+    padding: 0 10px 10px 11px;
+  }
+  &__description {
     font-family: arial;
-    padding: 0 10px 10px 10px; }
-  .week-summary__date::before, .week-summary__date::after {
+    padding: 0 10px 10px 10px;
+  }
+  &__date::before,
+  &__date::after {
     content: "";
     display: inline-block;
     width: 16px;
     height: 16px;
     background: hotpink;
     border-radius: 50%;
-    margin: 0 6px; }
+    margin: 0 6px;
+  }
+}
 
 .navigation__link {
   margin: 0 15px;
@@ -87,33 +111,46 @@ body {
   font-weight: bold;
   line-height: 50px;
   cursor: pointer;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .footer {
   margin-top: 20px;
   border-radius: 8px;
-  background-color: #1a0303;
+  background-color: rgb(26, 3, 3);
   color: whitesmoke;
-  line-height: 24px; }
+  line-height: 24px;
+}
 
 .hamburger {
   display: none;
   font-size: 30px;
   position: absolute;
   top: 10px;
-  right: 15px; }
+  right: 15px;
+}
 
+// MEDIA - można potem pozmieniać na składnię SCSS z wykorzystaniem &
 @media (max-width: 600px) {
   .main__image {
-    width: 100%; }
+    width: 100%;
+  }
+
   .navigation__link {
     display: block;
-    line-height: 30px; }
+    line-height: 30px;
+  }
   .header {
-    position: fixed; }
+    position: fixed;
+  }
   .header__navigation {
-    display: none; }
+    display: none;
+  }
+
   .hamburger {
-    display: block; }
+    display: block;
+  }
   .navigation--open {
-    display: block; } }
+    display: block;
+  }
+}
